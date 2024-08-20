@@ -12,9 +12,10 @@ interface Props {
 const useStyles = createStyles((theme, params: { canClose?: boolean }) => ({
   button: {
     borderRadius: 4,
-    flex: '1 15%',
-    alignSelf: 'stretch',
-    height: 'auto',
+    alignSelf: 'center',
+    height: '35px',
+    border: '1px solid #373737',
+    width: '35px',
     textAlign: 'center',
     justifyContent: 'center',
     padding: 2,

@@ -23,6 +23,7 @@ const useStyles = createStyles((theme, params: { position?: TextUiPosition }) =>
   },
   container: {
     fontSize: 16,
+    border: '1px solid #373737',
     padding: 12,
     margin: 8,
     backgroundColor: theme.colors.dark[6],
@@ -59,10 +60,16 @@ const TextUI: React.FC = () => {
                 <LibIcon
                   icon={data.icon}
                   fixedWidth
-                  size="lg"
+                  size="sm"
                   animation={data.iconAnimation}
                   style={{
+                    minWidth: '35px',
+                    height: '35px',
                     color: data.iconColor,
+                    border: '1px solid #373737',
+                    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                    padding: '5px',
+                    margin: '2px',
                     alignSelf: !data.alignIcon || data.alignIcon === 'center' ? 'center' : 'start',
                   }}
                 />

@@ -31,15 +31,15 @@ const useStyles = createStyles((theme, params: { position?: MenuPosition; itemCo
   },
   buttonsWrapper: {
     height: 'fit-content',
-    maxHeight: 415,
+    maxHeight: 475,
     overflow: 'hidden',
     borderRadius: params.itemCount <= 6 || params.selected === params.itemCount - 1 ? theme.radius.md : undefined,
-    backgroundColor: theme.colors.dark[8],
+    backgroundColor: theme.colors.dark[7],
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0,
   },
   scrollArrow: {
-    backgroundColor: theme.colors.dark[8],
+    backgroundColor: theme.colors.dark[7],
     textAlign: 'center',
     borderBottomLeftRadius: theme.radius.md,
     borderBottomRightRadius: theme.radius.md,
@@ -47,7 +47,7 @@ const useStyles = createStyles((theme, params: { position?: MenuPosition; itemCo
   },
   scrollArrowIcon: {
     color: theme.colors.dark[2],
-    fontSize: 20,
+    fontSize: 25,
   },
 }));
 

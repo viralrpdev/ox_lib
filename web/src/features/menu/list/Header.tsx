@@ -14,7 +14,7 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
   },
   heading: {
-    fontSize: 24,
+    fontSize: 28,
     textTransform: 'uppercase',
     fontWeight: 500,
   },

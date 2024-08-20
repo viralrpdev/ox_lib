@@ -6,9 +6,14 @@ import ScaleFade from '../../transitions/ScaleFade';
 import type { ProgressbarProps } from '../../typings';
 
 const useStyles = createStyles((theme) => ({
+  background: {
+    width: '100%',
+    height: '100vh',
+    background: `radial-gradient(ellipse at bottom, ${theme.colors[theme.primaryColor][theme.fn.primaryShade()]} 0%, transparent 20%)`,
+  },
   container: {
     width: 350,
-    height: 45,
+    height: 10,
     borderRadius: theme.radius.sm,
     backgroundColor: theme.colors.dark[5],
     overflow: 'hidden',
@@ -30,7 +35,7 @@ const useStyles = createStyles((theme) => ({
     position: 'absolute',
     display: 'flex',
     width: 350,
-    height: 45,
+    height: 70,
     alignItems: 'center',
     justifyContent: 'center',
   },

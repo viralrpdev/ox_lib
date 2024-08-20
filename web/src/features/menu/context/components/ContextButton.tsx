@@ -23,10 +23,13 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     width: '100%',
     color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[0],
     whiteSpace: 'pre-wrap',
+    fontSize: 16,
+    fontWeight: 400,
   },
   button: {
     height: 'fit-content',
     width: '100%',
+    border: '1px solid #373737',
     padding: 10,
     '&:hover': {
       backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
@@ -40,8 +43,9 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     maxWidth: '25px',
   },
   description: {
-    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[2],
-    fontSize: 12,
+    color: params.disabled ? theme.colors[theme.primaryColor][3] : theme.colors.dark[0],
+    fontSize: 15,
+    fontWeight: 300,
   },
   dropdown: {
     padding: 10,
@@ -52,21 +56,26 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     border: 'none',
   },
   buttonStack: {
-    gap: 4,
+    gap: 8,
     flex: '1',
   },
   buttonGroup: {
-    gap: 4,
+    gap: 8,
     flexWrap: 'nowrap',
   },
   buttonIconContainer: {
-    width: 25,
-    height: 25,
+    minWidth: '45px',
+    height: '45px',
+    border: '1px solid #373737',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    borderRadius: theme.radius.sm,
     justifyContent: 'center',
     alignItems: 'center',
+    color: params.disabled ? theme.colors[theme.primaryColor][theme.fn.primaryShade()] : theme.colors[theme.primaryColor][theme.fn.primaryShade()],
   },
   buttonTitleText: {
     overflowWrap: 'break-word',
+    color: params.disabled ? theme.colors[theme.primaryColor][2] : '#fff',
   },
   buttonArrowContainer: {
     justifyContent: 'center',

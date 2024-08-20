@@ -17,8 +17,9 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
   buttonContainer: {
     backgroundColor: theme.colors.dark[6],
     borderRadius: theme.radius.md,
-    padding: 2,
-    height: 60,
+    padding: 10,
+    height: 70,
+    border: '1px solid #373737',
     scrollMargin: 8,
     '&:focus': {
       backgroundColor: theme.colors.dark[4],
@@ -26,7 +27,7 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
     },
   },
   iconImage: {
-    maxWidth: 32,
+    maxWidth: 36,
   },
   buttonWrapper: {
     paddingLeft: 5,
@@ -36,12 +37,17 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
   iconContainer: {
     display: 'flex',
     alignItems: 'center',
-    width: 32,
-    height: 32,
+    border: '1px solid #373737',
+    justifyContent: 'center',
+    width: 24,
+    height: 24,
+    padding: 25,
+    backgroundColor: `rgba(0, 0, 0, 0.2)`,
+    borderRadius: theme.radius.md,
   },
   icon: {
     fontSize: 24,
-    color: params.iconColor || theme.colors.dark[2],
+    color: params.iconColor || theme.colors[theme.primaryColor][theme.fn.primaryShade()],
   },
   label: {
     color: theme.colors.dark[2],
